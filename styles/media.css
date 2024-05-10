@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+
+    .small-description {
+      width: 100%;
+      align-items: center;
+      .title {
+        text-align: center;
+      }
+
+      & p {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .cards {
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 758px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .attraction-card {
+    width: 100% !important;
+    text-align: center;
+
+    & .card-description {
+      gap: 20px !important;
+    }
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  header {
+    justify-content: space-between;
+  }
+  .burger {
+    display: block !important;
+  }
+
+  .header-nav > a {
+    display: none !important;
+  }
+}
